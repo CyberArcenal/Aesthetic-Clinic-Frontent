@@ -1,0 +1,8 @@
+/* Sa index.css o App.css */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.fixed.inset-0 {
+  animation: fadeIn 0.2s ease-out;
+}

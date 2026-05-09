@@ -1,8 +1,14 @@
 // main.tsx (updated)
 import ReactDOM from 'react-dom/client'
-import './styles/index.css';
-import './styles/calendar.css';
 import "reflect-metadata";
+// @ts-ignore
+import './styles/index.css';
+// @ts-ignore
+import './styles/calendar.css';
+// @ts-ignore
+import './styles/landing.css';
+// @ts-ignore
+import './styles/custom.css';
 import React from 'react';
 import ConditionalRouter from './components/Shared/ConditionalRouter';
 import App from './routes/App';

@@ -13,7 +13,7 @@ import PublicLayout from "../layout/PublicLayout";
 import RequireAuth from "../layout/RequireAuth";
 import AdminLayout from "../layout/AdminLayout";
 import ClientLayout from "../layout/ClientLayout";
-import HomePage from "../pages/home";
+import HomePage from "../pages/public/landing";
 import LoginPage from "../pages/auth/login";
 import RegisterPage from "../pages/auth/register";
 import ForgotPasswordPage from "../pages/auth/forgot-password";
@@ -45,6 +45,9 @@ import UsersPage from "@/pages/users";
 import InAppNotificationsPage from "@/pages/notification/inapp";
 import NotifyLogsPage from "@/pages/notification/logs";
 import TemplatesPage from "@/pages/notification/templates";
+import PublicTreatmentsPage from "@/pages/public/treatments";
+import PublicTreatmentDetailPage from "@/pages/public/treatments/details";
+import ContactPage from "@/pages/public/contact";
 
 function App() {
   return (
@@ -57,6 +60,9 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/forgot-password" element={<ForgotPasswordPage />} />
         <Route path="/reset-password" element={<ResetPasswordPage />} />
+        <Route path="/treatments" element={<PublicTreatmentsPage />} />
+        <Route path="/treatments/:id" element={<PublicTreatmentDetailPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Route>
 
       {/* Admin / Staff routes (full management) */}
