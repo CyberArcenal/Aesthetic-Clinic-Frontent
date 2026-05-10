@@ -16,7 +16,7 @@ import {
 import { NotificationDrawer } from "../components/Shared/NotificationDrawer";
 import notificationApi from "../api/core/notification";
 import { authStore, AuthStore } from "../stores/authStore";
-import ProfileModal from "@/pages/profile";
+import ProfileModal from "@/pages/admin/profile";
 
 interface TopBarProps {
   toggleSidebar: () => void;

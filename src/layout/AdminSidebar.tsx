@@ -65,59 +65,59 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
   // Menu items for Aesthetic Clinic
   const menuItems: MenuItem[] = [
     {
-      path: "/dashboard",
+      path: "/admin/dashboard",
       name: "Dashboard",
       icon: LayoutDashboard,
       category: "core",
     },
     {
-      path: "",
+      path: "/admin/clients",
       name: "Client Management",
       icon: Users,
       category: "clients",
       children: [
-        { path: "/clients", name: "All Clients", icon: Users },
+        { path: "/admin/clients", name: "All Clients", icon: Users },
         {
-          path: "/clients/analysis",
+          path: "/admin/clients/analysis",
           name: "Client Analytics",
           icon: ChartNoAxesCombined,
         },
       ],
     },
     {
-      path: "",
+      path: "/admin/treatments",
       name: "Treatments",
       icon: Stethoscope,
       category: "treatments",
       children: [
-        { path: "/treatments", name: "Service Catalog", icon: ClipboardList },
-        { path: "/treatments/categories", name: "Categories", icon: Activity },
-        { path: "/treatments/packages", name: "Packages", icon: Hospital },
+        { path: "/admin/treatments", name: "Service Catalog", icon: ClipboardList },
+        { path: "/admin/treatments/categories", name: "Categories", icon: Activity },
+        { path: "/admin/treatments/packages", name: "Packages", icon: Hospital },
       ],
     },
     {
-      path: "",
+      path: "/admin/appointments",
       name: "Appointments",
       icon: CalendarDays,
       category: "appointments",
       children: [
-        { path: "/appointments", name: "List View", icon: CalendarDays },
+        { path: "/admin/appointments", name: "List View", icon: CalendarDays },
         {
-          path: "/appointments/calendar",
+          path: "/admin/appointments/calendar",
           name: "Calendar View",
           icon: CalendarDays,
         },
-        { path: "/appointments/history", name: "History", icon: FileText },
+        { path: "/admin/appointments/history", name: "History", icon: FileText },
       ],
     },
     {
-      path: "",
+      path: "/admin/billing",
       name: "Billing",
       icon: CreditCard,
       category: "billing",
       children: [
-        { path: "/invoices", name: "Invoices", icon: Receipt },
-        { path: "/payments", name: "Payments", icon: CreditCard },
+        { path: "/admin/invoices", name: "Invoices", icon: Receipt },
+        { path: "/admin/payments", name: "Payments", icon: CreditCard },
         {
           path: "/reports/revenue",
           name: "Revenue Reports",
@@ -126,7 +126,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
       ],
     },
     {
-      path: "/photos",
+      path: "/admin/photos",
       name: "Photo Gallery",
       icon: Camera,
       category: "photos",
@@ -140,20 +140,20 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
         // { path: "/notifications/inapp", name: "In-App", icon: BellRing },
         { path: "/notifications/templates", name: "Templates", icon: Mail },
         {
-          path: "/notifications/logs",
+          path: "/admin/notifications/logs",
           name: "Delivery Logs",
           icon: AlertCircle,
         },
       ],
     },
     {
-      path: "/reports",
+      path: "/admin/reports",
       name: "Reports",
       icon: BarChart3,
       category: "reports",
     },
     {
-      path: "/staff",
+      path: "/admin/staff",
       name: "Staff",
       icon: UserCog,
       category: "staff",
@@ -164,10 +164,10 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
       icon: Settings,
       category: "system",
       children: [
-        { path: "/users", name: "Users", icon: Users },
-        { path: "/audit", name: "Audit Trail", icon: Shield },
-        { path: "/settings", name: "Settings", icon: Settings },
-        { path: "/backup", name: "Backup", icon: Activity },
+        { path: "/admin/users", name: "Users", icon: Users },
+        { path: "/admin/audit", name: "Audit Trail", icon: Shield },
+        { path: "/admin/settings", name: "Settings", icon: Settings },
+        { path: "/admin/backup", name: "Backup", icon: Activity },
       ],
     },
   ];

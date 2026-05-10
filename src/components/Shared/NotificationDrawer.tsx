@@ -12,11 +12,11 @@ import {
 } from "lucide-react";
 import { format } from "date-fns";
 import type { NotificationResponseDto } from "../../api/core/notification";
-import { useNotificationView } from "../../pages/notification/hooks/useNotificationView";
+import { useNotificationView } from "../../pages/admin/notification/hooks/useNotificationView";
 import { authStore } from "../../stores/authStore";
 import notificationApi from "../../api/core/notification";
 import { dialogs } from "../../utils/dialogs";
-import NotificationViewDialog from "../../pages/notification/components/NotificationViewDialog";
+import NotificationViewDialog from "../../pages/admin/notification/components/NotificationViewDialog";
 
 interface NotificationDrawerProps {
   isOpen: boolean;
